@@ -32,7 +32,7 @@ app.get('/usuario', function(req, res) {
                 });
             }
 
-            Usuario.count({
+            Usuario.countDocuments({
                     estado: true
                 },
                 (err, conteo) => {
